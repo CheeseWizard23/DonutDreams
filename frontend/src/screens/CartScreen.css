@@ -1,0 +1,93 @@
+.cartscreen {
+    display: flex;
+    max-width: 1300px;
+    margin: 2rem auto;
+  }
+  
+  .cartscreen h2 {
+    margin-bottom: 1rem;
+    font-family: "Pacifico", "sans-serif";
+  }
+  
+  .cartscreen_left {
+    flex: 0.7;
+    margin-right: 1rem;
+    background: transparent;
+    padding: 1rem;
+  }
+  
+  .cartscreen_right {
+    flex: 0.3;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 2em;
+    height: fit-content;
+  }
+  
+  .cartscreen_right div {
+    padding: 1rem;
+  }
+  
+  .cartscreen_info p {
+    padding: 8px;
+  }
+  
+  .cartscreen_info p:first-child {
+    font-weight: bold;
+  }
+  
+  .cartscreen_right div:last-child {
+    border: none;
+  }
+  
+  .cartscreen_right div button {
+    padding: 10px 17px;
+    width: 100%;
+    background-color: #FFBE61;
+    color: black;
+    border: 1px solid #FFBE61;
+    cursor: pointer;
+    border-radius: 2em;
+    font-family: "Varela Round","sans-serif ";
+  }
+  
+  .cartscreen_right div button:hover {
+    opacity: 0.9;
+    background: #f18e00;
+    color: #ffffff;
+  }
+
+  .empty_cart {
+    font-family: "Varela Round", "sans-serif";
+    text-decoration: none;
+  }
+
+  .addressInput {
+    padding: 0.1rem;
+    font-family: "Varela Round", "sans-serif";
+  }
+  
+  @media (max-width: 1320px) {
+    .cartscreen {
+      max-width: 900px;
+    }
+    .cartscreen_right {
+      margin-top: 5vh;
+    }
+  }
+  
+  @media (max-width: 960px) {
+    .cartscreen {
+      max-width: 800px;
+    }
+  }
+  
+  @media (max-width: 960px) {
+    .cartscreen {
+      flex-direction: column;
+    }
+  
+    .cartscreen_right {
+      margin: 1rem;
+    }
+  }

@@ -1,0 +1,64 @@
+p {
+  font-family: "Varela Round","sans-serif ";
+}
+
+select {
+  font-family: "Varela Round","sans-serif ";
+}
+
+.cartitem {
+    width: 100%;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+    gap: 8px;
+    background: #fff;
+    border-radius: 1.5em;
+    place-items: center;
+    margin-bottom: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.cartitem_deletebutton {
+  padding: 1px 1px;
+}
+
+.cartitem_image > img {
+  border-radius: 1em;
+}
+  
+  .cartitem_name {
+    text-decoration: none;
+    color: #171717;
+  }
+  
+  .cartitem_name:hover {
+    color: #f18e00;
+  }
+  
+  .cartitem_select {
+    padding: 10px 17px;
+  }
+  
+  .cartitem_delete {
+    padding: 10px 17px;
+    color: red;
+    background: #f4f4f4;
+    border: 1px solid #171717;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+  
+  @media (max-width: 700px) {
+    .cartitem_name {
+      font-size: 0.9rem;
+    }
+  
+    .cartitem_select {
+      padding: 4px 6px;
+    }
+  
+    .cartitem_price {
+      font-size: 0.9rem;
+    }
+  }

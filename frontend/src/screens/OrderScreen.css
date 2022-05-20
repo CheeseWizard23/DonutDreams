@@ -1,0 +1,153 @@
+.orderscreen {
+    max-width: 1300px;
+    margin: 1rem auto;
+}
+
+.big {
+    width: 100%;
+    display: flex;
+    padding-bottom: 2rem
+}
+
+.orderscreen_left {
+    display: flex;
+    flex: 0.6;
+    background-color: white;
+    border-radius: 2em;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+
+.left_info {
+    margin: 1rem;
+    flex: 1;
+    background: #fff;
+    height: fit-content;
+    font-size: 0.9rem;
+}
+
+.left_name {
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-family: "Pacifico", "sans-serif";
+}
+
+.left_info > p,
+.right_info > p {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(250, 190, 97, 0.8);
+}
+
+.onedonut {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(250, 190, 97, 0.8);
+}
+
+.left_info > p:last-child {
+    margin-bottom: 1rem;
+}
+
+.order_varela {
+    font-family: "Varela Round", "sans-serif";
+}
+
+.orderscreen_right {
+    flex: 0.4;
+    background-color: white;
+    border-radius: 2em;
+    margin-left: 1em;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.right_info {
+    width: 90%;
+    margin: 1rem;
+    background: #fff;
+}
+
+.right_info p {
+    padding: 1rem;
+    font-size: 0.8rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.submitButton {
+    grid-column: 1/-1;
+    width: 100%;
+    padding: 10px 16px;
+    background: #FFBE61;
+    border: 1px #FFBE61;
+    color: black;
+    cursor: pointer;
+    border-radius: 1em;
+    font-family: "Varela Round", "sans-serif";
+}
+
+.submitButton:hover {
+    background: #f18e00;
+    border: 1px #f18e00;
+    color: white;
+    font-family: "Varela Round", "sans-serif";
+}
+
+.submitButtonDisabled {
+    grid-column: 1/-1;
+    width: 100%;
+    padding: 10px 16px;
+    background: #f5564a;
+    border: 1px #f5564a;
+    color: black;
+    cursor: pointer;
+    border-radius: 1em;
+    font-family: "Varela Round", "sans-serif";
+}
+
+.right_info select {
+    padding: 10px 16px;
+}
+
+.text {
+    font-family: "Varela Round", "sans-serif";
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 3rem;
+    font-family: "Pacifico", "sans-serif";
+    text-align: center;
+}
+
+.reviewInput {
+    font-family: "Varela Round", "sans-serif";
+}
+
+@media (max-width: 960px) {
+    .orderscreen {
+        flex-direction: column;
+    }
+
+    .orderscreen_left {
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .left_info {
+        flex: 1;
+    }
+
+    .orderscreen_right {
+        flex: 1;
+        padding: 1rem;
+        margin-top: 1rem;
+        width: 100;
+        margin-left: 0;
+    }
+
+    .right_info {
+        width: 100%;
+        margin: 0;
+    }
+}
